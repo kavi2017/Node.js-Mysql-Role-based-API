@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "87d3ca5f-bbfa-4de6-a5d0-403ef624edc6",
+		"name": "Doodle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "doodle authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ttvrkavi@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/users/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doodle - create staff",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNTk2NzM3MTA2fQ.F2jxLBEEYEWX8cEe9m5vVZElZ1DwwHNpeVsOB_0-GiA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "staff12",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "staff12",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "raj@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "staff",
+							"type": "text"
+						},
+						{
+							"key": "roleType",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/users/createStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"createStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doodle create product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInJvbGUiOiJzdGFmZiIsImlhdCI6MTU5NjcxODcwN30.v0g9lb8z84oVK27yr9yZ_D6odd1-zd9nMGLVuIS3h5s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "Fire lalall",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2500",
+							"type": "text"
+						},
+						{
+							"key": "specifications",
+							"value": "safety measurement",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/users/createProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"createProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doodle UPDATE product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInJvbGUiOiJzdGFmZiIsImlhdCI6MTU5NjcyODY4M30.TmXsEDWI3QonJOblz0aj9b42NwuCy4jKrRc4RmxXUdE"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productName",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1520",
+							"type": "text"
+						},
+						{
+							"key": "specifications",
+							"value": "test tetkav",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/users/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doodle GetAll user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOiJzdXBlcmFkbWluIiwiaWF0IjoxNTk2NzM3NDQ3fQ.G0gIRB19ShuuunzOryXwGKv-QaicUKuMwX9btNMGsjQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doodle list all staff by admin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTU5NjYwNzY4MX0.eFq53uyUJbczMUsfaUmNMSO7oyq6kd_51mZ-OmMg3Yc"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:4000/users/listStaff",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"listStaff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doodle Getuser by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInJvbGUiOiJBZG1pbiIsImlhdCI6MTU5NjYwNzY4MX0.eFq53uyUJbczMUsfaUmNMSO7oyq6kd_51mZ-OmMg3Yc"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
