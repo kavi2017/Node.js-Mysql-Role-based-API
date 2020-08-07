@@ -74,7 +74,7 @@ Product.listUser = function(result){
 }
 Product.updateProduct = function (product, result) {    
        // now you have your rows, you can see if there are <20 of them
-        sql.query("Update product set productName = '"+product.productName+"', price = '"+product.price+"', specifications = '"+product.specifications+"', status = '"+product.status+"' where id ="+product.id, function (err, res) {
+        sql.query("Update product set productName = '"+product.productName+"', price = '"+product.price+"', specifications = '"+product.specifications+"', status = '"+product.status+"' where id ="+product.id, function (err, res) {fghfg
                
                if(err) {
                    console.log("error: ", err);

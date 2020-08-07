@@ -1,4 +1,5 @@
-Node.js Sample role based REST API
+# node-role-based-authorization-api
 
-Doodle.postman_collection.json collection available
+Please refer the this file in the same folder Doodle.postman_collection.json 
+sql database - doodle.sql - I have created trigger for product table. whenever product approved by admin, it will create log for this
 
